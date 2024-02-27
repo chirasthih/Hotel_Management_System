@@ -18,6 +18,16 @@ public class CustomerDto {
     public CustomerDto() {
     }
 
+    public CustomerDto(String custid, String fname, String lname, String email, String phone) {
+          this.custid = custid;
+        this.fname = fname;
+        this.lname = lname;
+        this.email= email;
+        this.phone = phone;
+        
+       
+    }
+
     /**
      * @return the custid
      */

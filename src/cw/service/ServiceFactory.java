@@ -4,6 +4,11 @@
  */
 package cw.service;
 
+import cw.service.custom.impl.CustomerServiceImpl;
+import cw.service.custom.impl.ReservationServiceImpl;
+import cw.service.custom.impl.RoomCategoryServiceImpl;
+import cw.service.custom.impl.RoomServiceImpl;
+
 /**
  *
  * @author chira
@@ -23,13 +28,13 @@ public class ServiceFactory {
         
            switch (serviceType) {
             case ROOMCATEGORIES:
-                return new RoomCategoriesServiceImpl();
+                return new RoomCategoryServiceImpl();
             case ROOMS:
-                return new RoomsServiceImpl();
+                return new RoomServiceImpl();
             case CUSTOMER:
                 return new CustomerServiceImpl();
             case RESERVATIONS:
-                return new ReservationsServiceImpl();
+                return new ReservationServiceImpl();
             default:
                 return null;
         }
