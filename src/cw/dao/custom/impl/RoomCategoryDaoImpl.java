@@ -41,7 +41,7 @@ public class RoomCategoryDaoImpl implements RoomCategoryDao {
     public RoomCategoryEntity get(String id) throws Exception {
         ResultSet rst = CrudUtil.executeQuery("SELECT * FROM Roomcategories WHERE categoryid=?", id);
         while (rst.next()) {
-            return new RoomCategoryEntity(rst.getString("categoryid"),
+            return new RoomCategoryEntity(rst.getInt("categoryid"),
                      rst.getString("categoryname"),
                     rst.getString("description"));
         }
@@ -54,7 +54,7 @@ public class RoomCategoryDaoImpl implements RoomCategoryDao {
         List<RoomCategoryEntity> roomCategoryEntities = new ArrayList<>();
 
         while (rst.next()) {
-            roomCategoryEntities.add(new RoomCategoryEntity(rst.getString("categoryid"),
+            roomCategoryEntities.add(new RoomCategoryEntity(rst.getInt("categoryid"),
                      rst.getString("categoryname"),
                     rst.getString("Description")));
                     

@@ -4,10 +4,12 @@
  */
 package cw.dao.custom;
 
+import cw.dao.CrudDao;
+import cw.entity.RoomEntity;
 /**
  *
  * @author chira
  */
-public interface RoomDao {
+public interface RoomDao extends CrudDao<RoomEntity, String>{
     
 }

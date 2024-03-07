@@ -9,7 +9,7 @@ package cw.entity;
  * @author chira
  */
 public class RoomCategoryEntity {
-     private String categoryid;
+     private Integer categoryid;
      private String categoryname;
      private String description;
    
@@ -18,7 +18,7 @@ public class RoomCategoryEntity {
      public RoomCategoryEntity() {
     }
 
-    public RoomCategoryEntity(String categoryid, String categoryname, String description) {
+    public RoomCategoryEntity(Integer categoryid, String categoryname, String description) {
        this.categoryid=categoryid;
        this.categoryname=categoryname;
        this.description=description;
@@ -28,14 +28,14 @@ public class RoomCategoryEntity {
     /**
      * @return the categoryid
      */
-    public String getCategoryid() {
+    public Integer getCategoryid() {
         return categoryid;
     }
 
     /**
      * @param categoryid the categoryid to set
      */
-    public void setCategoryid(String categoryid) {
+    public void setCategoryid(Integer categoryid) {
         this.categoryid = categoryid;
     }
 

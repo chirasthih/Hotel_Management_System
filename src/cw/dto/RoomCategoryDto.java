@@ -9,7 +9,7 @@ package cw.dto;
  * @author chira
  */
 public class RoomCategoryDto {
-     private String categoryid;
+     private Integer categoryid;
      private String categoryname;
      private String description;
    
@@ -18,7 +18,7 @@ public class RoomCategoryDto {
      public RoomCategoryDto() {
     }
 
-    public RoomCategoryDto(String categoryid, String categoryname, String description) {
+    public RoomCategoryDto(Integer categoryid, String categoryname, String description) {
        this.categoryid=categoryid;
        this.categoryname=categoryname;
        this.description=description;
@@ -28,14 +28,14 @@ public class RoomCategoryDto {
     /**
      * @return the categoryid
      */
-    public String getCategoryid() {
+    public Integer getCategoryid() {
         return categoryid;
     }
 
     /**
      * @param categoryid the categoryid to set
      */
-    public void setCategoryid(String categoryid) {
+    public void setCategoryid(Integer categoryid) {
         this.categoryid = categoryid;
     }
 

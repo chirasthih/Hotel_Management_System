@@ -9,7 +9,7 @@ package cw.entity;
  * @author chira
  */
 public class CustomerEntity {
-     private String custid;
+    private Integer custid;
     private String fname;
     private String lname;
     private String email;
@@ -18,7 +18,7 @@ public class CustomerEntity {
      public CustomerEntity() {
     }
 
-    public CustomerEntity(String custid, String fname, String lname, String email, String phone) {
+    public CustomerEntity(Integer custid, String fname, String lname, String email, String phone) {
        this.custid=custid;
        this.fname=fname;
        this.lname=lname;
@@ -29,14 +29,14 @@ public class CustomerEntity {
     /**
      * @return the custid
      */
-    public String getCustid() {
+    public Integer getCustid() {
         return custid;
     }
 
     /**
      * @param custid the custid to set
      */
-    public void setCustid(String custid) {
+    public void setCustid(Integer custid) {
         this.custid = custid;
     }
 
